@@ -22,8 +22,10 @@ spec:
       description: the message to send to Slack
       # below works
       # default: 'Tekton Pipeline completed successfully. :heavy_check_mark:\nVisit *<https://api.slack.com/reference/surfaces/formatting|More on Slack message formatting.>*'
+      # below fail
       default: |
         My default triggertemplate message line 1
+      # below fail also
       # default: |
       #   My default triggertemplate message line 1
       #   My default triggertemplate message line 2
