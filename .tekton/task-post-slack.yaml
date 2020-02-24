@@ -32,8 +32,9 @@ spec:
       env:
         # keep slack message injected in an env var to let YAML manage the quote for us
         - name: SLACK_MESSAGE
-          value: |
-            $(inputs.params.message)
+          value: "Fixed value"
+          # value: |
+          #   $(inputs.params.message)
         - name: PIPELINE_RUN_NAME
           valueFrom:
             fieldRef:
