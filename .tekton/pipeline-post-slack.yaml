@@ -32,7 +32,8 @@ spec:
         - name: messageFormat
           value: $(params.messageFormat)
         - name: message
-          value: $(params.message)
+          value: |
+            $(params.message)
         - name: messageScript
           value: $(params.messageScript)
         - name: exitOnError
